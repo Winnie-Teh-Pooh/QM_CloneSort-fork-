@@ -22,6 +22,9 @@ Manual operative order is persisted across sessions in `%AppData%/../LocalLow/Ma
 # Source Code
 Source code is available on GitHub at https://github.com/validaq/QM_CloneSort
 
+# Credits
+Thanks to nbk_redspy, whose mod sources were very valuable for learning how to mod the game properly.
+
 # Changelog
 
 ## 1.0.0
