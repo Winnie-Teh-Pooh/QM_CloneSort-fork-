@@ -23,12 +23,12 @@ REM Find the .csproj file in the src directory.
 for %%f in (src\*.csproj) do set CSPROJ=%%f
 
 REM Build the project and pass the Steam Workshop ID for deployment.
-dotnet build %CSPROJ% /p:SteamId=%STEAM_ID%
+dotnet build %CSPROJ% -c Release /p:SteamId=%STEAM_ID%
 if %errorlevel% neq 0 (
     echo Build and deploy failed.
     exit /b %errorlevel%
 )
-echo Build and deploy to Steam workshop %STEAM_ID% succeeded.
+echo Build and deploy to local Steam workshop directory for %STEAM_ID% succeeded.
 
 REM Read the workshop content path resolved by MSBuild during the build.
 set WORKSHOP_PATH=
